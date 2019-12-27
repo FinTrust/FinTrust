@@ -33,13 +33,13 @@
             this.lbli = new System.Windows.Forms.Label();
             this.lblF = new System.Windows.Forms.Label();
             this.panelLogin = new System.Windows.Forms.Panel();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.lblUser = new System.Windows.Forms.Label();
+            this.cmbUser = new System.Windows.Forms.ComboBox();
             this.panelLoginHead = new System.Windows.Forms.Panel();
             this.lblLogin = new System.Windows.Forms.Label();
-            this.cmbUser = new System.Windows.Forms.ComboBox();
-            this.lblUser = new System.Windows.Forms.Label();
-            this.lblPassword = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelLogin.SuspendLayout();
             this.panelLoginHead.SuspendLayout();
             this.SuspendLayout();
@@ -92,7 +92,7 @@
             // 
             // panelLogin
             // 
-            this.panelLogin.Controls.Add(this.button1);
+            this.panelLogin.Controls.Add(this.btnSubmit);
             this.panelLogin.Controls.Add(this.textBox1);
             this.panelLogin.Controls.Add(this.lblPassword);
             this.panelLogin.Controls.Add(this.lblUser);
@@ -102,6 +102,57 @@
             this.panelLogin.Name = "panelLogin";
             this.panelLogin.Size = new System.Drawing.Size(404, 354);
             this.panelLogin.TabIndex = 0;
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.Location = new System.Drawing.Point(174, 255);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(75, 23);
+            this.btnSubmit.TabIndex = 5;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(165, 184);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(224, 29);
+            this.textBox1.TabIndex = 4;
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Location = new System.Drawing.Point(55, 195);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(78, 18);
+            this.lblPassword.TabIndex = 3;
+            this.lblPassword.Text = "Password";
+            // 
+            // lblUser
+            // 
+            this.lblUser.AutoSize = true;
+            this.lblUser.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUser.Location = new System.Drawing.Point(53, 91);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(41, 18);
+            this.lblUser.TabIndex = 2;
+            this.lblUser.Text = "User";
+            // 
+            // cmbUser
+            // 
+            this.cmbUser.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbUser.FormattingEnabled = true;
+            this.cmbUser.Items.AddRange(new object[] {
+            "Branch Manager",
+            "probationary Officer",
+            "Cashier",
+            "Clerk"});
+            this.cmbUser.Location = new System.Drawing.Point(165, 83);
+            this.cmbUser.Name = "cmbUser";
+            this.cmbUser.Size = new System.Drawing.Size(224, 28);
+            this.cmbUser.TabIndex = 1;
             // 
             // panelLoginHead
             // 
@@ -120,57 +171,6 @@
             this.lblLogin.Size = new System.Drawing.Size(63, 22);
             this.lblLogin.TabIndex = 0;
             this.lblLogin.Text = "Login";
-            // 
-            // cmbUser
-            // 
-            this.cmbUser.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbUser.FormattingEnabled = true;
-            this.cmbUser.Items.AddRange(new object[] {
-            "Branch Manager",
-            "probationary Officer",
-            "Cashier",
-            "Clerk"});
-            this.cmbUser.Location = new System.Drawing.Point(165, 83);
-            this.cmbUser.Name = "cmbUser";
-            this.cmbUser.Size = new System.Drawing.Size(224, 28);
-            this.cmbUser.TabIndex = 1;
-            // 
-            // lblUser
-            // 
-            this.lblUser.AutoSize = true;
-            this.lblUser.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUser.Location = new System.Drawing.Point(53, 91);
-            this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(41, 18);
-            this.lblUser.TabIndex = 2;
-            this.lblUser.Text = "User";
-            // 
-            // lblPassword
-            // 
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(55, 195);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(78, 18);
-            this.lblPassword.TabIndex = 3;
-            this.lblPassword.Text = "Password";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(165, 184);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(224, 29);
-            this.textBox1.TabIndex = 4;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(174, 289);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // FinTrust_Login
             // 
@@ -203,7 +203,7 @@
         private System.Windows.Forms.Panel panelLoginHead;
         private System.Windows.Forms.Label lblLogin;
         private System.Windows.Forms.ComboBox cmbUser;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblUser;
