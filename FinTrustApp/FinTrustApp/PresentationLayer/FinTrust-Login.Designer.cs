@@ -123,6 +123,7 @@
             this.buttonLogin.TabIndex = 5;
             this.buttonLogin.Text = "LOGIN";
             this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // textBoxPassword
             // 
@@ -190,7 +191,7 @@
             // 
             // pictureBoxProfile
             // 
-            this.pictureBoxProfile.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBoxProfile.BackColor = System.Drawing.SystemColors.ControlLight;
             this.pictureBoxProfile.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxProfile.Image")));
             this.pictureBoxProfile.Location = new System.Drawing.Point(176, 98);
             this.pictureBoxProfile.Name = "pictureBoxProfile";
