@@ -54,7 +54,7 @@
             this.lblnTrust.Location = new System.Drawing.Point(588, 18);
             this.lblnTrust.Margin = new System.Windows.Forms.Padding(0);
             this.lblnTrust.Name = "lblnTrust";
-            this.lblnTrust.Size = new System.Drawing.Size(184, 64);
+            this.lblnTrust.Size = new System.Drawing.Size(183, 61);
             this.lblnTrust.TabIndex = 11;
             this.lblnTrust.Text = "nTrust";
             // 
@@ -65,7 +65,7 @@
             this.lbli.ForeColor = System.Drawing.Color.Red;
             this.lbli.Location = new System.Drawing.Point(566, 18);
             this.lbli.Name = "lbli";
-            this.lbli.Size = new System.Drawing.Size(42, 64);
+            this.lbli.Size = new System.Drawing.Size(41, 61);
             this.lbli.TabIndex = 13;
             this.lbli.Text = "i";
             this.lbli.Click += new System.EventHandler(this.lbli_Click);
@@ -77,16 +77,17 @@
             this.lblF.ForeColor = System.Drawing.Color.MidnightBlue;
             this.lblF.Location = new System.Drawing.Point(529, 18);
             this.lblF.Name = "lblF";
-            this.lblF.Size = new System.Drawing.Size(55, 64);
+            this.lblF.Size = new System.Drawing.Size(54, 61);
             this.lblF.TabIndex = 12;
             this.lblF.Text = "F";
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(363, 128);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(362, 128);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(409, 349);
             this.flowLayoutPanel1.TabIndex = 5;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // FinTrust_Login
             // 
