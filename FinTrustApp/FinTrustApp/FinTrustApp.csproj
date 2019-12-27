@@ -53,8 +53,17 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\FinTrust-Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\FinTrust-Login.Designer.cs">
+      <DependentUpon>FinTrust-Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PresentationLayer\FinTrust-Login.resx">
+      <DependentUpon>FinTrust-Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -76,6 +85,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\FinTrustBLL\FinTrustBLL.csproj">
+      <Project>{1d677bb0-eb77-4946-b64f-20af16bc3ca0}</Project>
+      <Name>FinTrustBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FinTrustDTO\FinTrustDTO.csproj">
+      <Project>{72517059-ae00-43b4-bc3f-31eff74b7b1d}</Project>
+      <Name>FinTrustDTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
