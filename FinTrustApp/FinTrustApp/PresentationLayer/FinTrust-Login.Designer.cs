@@ -28,30 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FinTrust_Login));
             this.lblTrust = new System.Windows.Forms.Label();
             this.lblnTrust = new System.Windows.Forms.Label();
             this.lbli = new System.Windows.Forms.Label();
             this.lblF = new System.Windows.Forms.Label();
             this.panelLogin = new System.Windows.Forms.Panel();
-            this.btnSubmit = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lblPassword = new System.Windows.Forms.Label();
-            this.lblUser = new System.Windows.Forms.Label();
-            this.cmbUser = new System.Windows.Forms.ComboBox();
+            this.buttonLogin = new System.Windows.Forms.Button();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.labelPassword = new System.Windows.Forms.Label();
+            this.labelUser = new System.Windows.Forms.Label();
+            this.comboBoxUser = new System.Windows.Forms.ComboBox();
             this.panelLoginHead = new System.Windows.Forms.Panel();
-            this.lblLogin = new System.Windows.Forms.Label();
+            this.labelSignin = new System.Windows.Forms.Label();
+            this.pictureBoxProfile = new System.Windows.Forms.PictureBox();
+            this.labelUsername = new System.Windows.Forms.Label();
+            this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.panelLogin.SuspendLayout();
             this.panelLoginHead.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfile)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTrust
             // 
             this.lblTrust.AutoSize = true;
-            this.lblTrust.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTrust.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTrust.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lblTrust.Location = new System.Drawing.Point(1080, 95);
+            this.lblTrust.Location = new System.Drawing.Point(686, 86);
             this.lblTrust.Name = "lblTrust";
-            this.lblTrust.Size = new System.Drawing.Size(104, 16);
+            this.lblTrust.Size = new System.Drawing.Size(128, 18);
             this.lblTrust.TabIndex = 14;
             this.lblTrust.Text = "Tradition of Trust";
             // 
@@ -60,7 +65,7 @@
             this.lblnTrust.AutoSize = true;
             this.lblnTrust.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblnTrust.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblnTrust.Location = new System.Drawing.Point(1072, 21);
+            this.lblnTrust.Location = new System.Drawing.Point(690, 18);
             this.lblnTrust.Margin = new System.Windows.Forms.Padding(0);
             this.lblnTrust.Name = "lblnTrust";
             this.lblnTrust.Size = new System.Drawing.Size(171, 56);
@@ -72,7 +77,7 @@
             this.lbli.AutoSize = true;
             this.lbli.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbli.ForeColor = System.Drawing.Color.Red;
-            this.lbli.Location = new System.Drawing.Point(1049, 21);
+            this.lbli.Location = new System.Drawing.Point(667, 18);
             this.lbli.Name = "lbli";
             this.lbli.Size = new System.Drawing.Size(37, 56);
             this.lbli.TabIndex = 13;
@@ -84,7 +89,7 @@
             this.lblF.AutoSize = true;
             this.lblF.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblF.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblF.Location = new System.Drawing.Point(1014, 21);
+            this.lblF.Location = new System.Drawing.Point(632, 18);
             this.lblF.Name = "lblF";
             this.lblF.Size = new System.Drawing.Size(53, 56);
             this.lblF.TabIndex = 12;
@@ -92,91 +97,132 @@
             // 
             // panelLogin
             // 
-            this.panelLogin.Controls.Add(this.btnSubmit);
-            this.panelLogin.Controls.Add(this.textBox1);
-            this.panelLogin.Controls.Add(this.lblPassword);
-            this.panelLogin.Controls.Add(this.lblUser);
-            this.panelLogin.Controls.Add(this.cmbUser);
+            this.panelLogin.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelLogin.Controls.Add(this.textBoxUsername);
+            this.panelLogin.Controls.Add(this.labelUsername);
+            this.panelLogin.Controls.Add(this.pictureBoxProfile);
+            this.panelLogin.Controls.Add(this.buttonLogin);
+            this.panelLogin.Controls.Add(this.textBoxPassword);
+            this.panelLogin.Controls.Add(this.labelPassword);
+            this.panelLogin.Controls.Add(this.labelUser);
+            this.panelLogin.Controls.Add(this.comboBoxUser);
             this.panelLogin.Controls.Add(this.panelLoginHead);
-            this.panelLogin.Location = new System.Drawing.Point(1025, 146);
+            this.panelLogin.Location = new System.Drawing.Point(559, 139);
             this.panelLogin.Name = "panelLogin";
-            this.panelLogin.Size = new System.Drawing.Size(404, 354);
+            this.panelLogin.Size = new System.Drawing.Size(404, 412);
             this.panelLogin.TabIndex = 0;
             // 
-            // btnSubmit
+            // buttonLogin
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(174, 255);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(75, 23);
-            this.btnSubmit.TabIndex = 5;
-            this.btnSubmit.Text = "Submit";
-            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.buttonLogin.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.buttonLogin.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogin.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.buttonLogin.Location = new System.Drawing.Point(136, 338);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(198, 58);
+            this.buttonLogin.TabIndex = 5;
+            this.buttonLogin.Text = "LOGIN";
+            this.buttonLogin.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // textBoxPassword
             // 
-            this.textBox1.Location = new System.Drawing.Point(165, 184);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(224, 29);
-            this.textBox1.TabIndex = 4;
+            this.textBoxPassword.Location = new System.Drawing.Point(148, 281);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = ' ';
+            this.textBoxPassword.Size = new System.Drawing.Size(224, 20);
+            this.textBoxPassword.TabIndex = 4;
+            this.textBoxPassword.UseSystemPasswordChar = true;
             // 
-            // lblPassword
+            // labelPassword
             // 
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(55, 195);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(78, 18);
-            this.lblPassword.TabIndex = 3;
-            this.lblPassword.Text = "Password";
+            this.labelPassword.AutoSize = true;
+            this.labelPassword.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPassword.Location = new System.Drawing.Point(36, 283);
+            this.labelPassword.Name = "labelPassword";
+            this.labelPassword.Size = new System.Drawing.Size(68, 18);
+            this.labelPassword.TabIndex = 3;
+            this.labelPassword.Text = "Password";
             // 
-            // lblUser
+            // labelUser
             // 
-            this.lblUser.AutoSize = true;
-            this.lblUser.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUser.Location = new System.Drawing.Point(53, 91);
-            this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(41, 18);
-            this.lblUser.TabIndex = 2;
-            this.lblUser.Text = "User";
+            this.labelUser.AutoSize = true;
+            this.labelUser.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUser.Location = new System.Drawing.Point(36, 179);
+            this.labelUser.Name = "labelUser";
+            this.labelUser.Size = new System.Drawing.Size(37, 18);
+            this.labelUser.TabIndex = 2;
+            this.labelUser.Text = "User";
             // 
-            // cmbUser
+            // comboBoxUser
             // 
-            this.cmbUser.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbUser.FormattingEnabled = true;
-            this.cmbUser.Items.AddRange(new object[] {
+            this.comboBoxUser.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxUser.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.comboBoxUser.FormattingEnabled = true;
+            this.comboBoxUser.Items.AddRange(new object[] {
             "Branch Manager",
             "probationary Officer",
             "Cashier",
             "Clerk"});
-            this.cmbUser.Location = new System.Drawing.Point(165, 83);
-            this.cmbUser.Name = "cmbUser";
-            this.cmbUser.Size = new System.Drawing.Size(224, 28);
-            this.cmbUser.TabIndex = 1;
+            this.comboBoxUser.Location = new System.Drawing.Point(148, 171);
+            this.comboBoxUser.Name = "comboBoxUser";
+            this.comboBoxUser.Size = new System.Drawing.Size(224, 26);
+            this.comboBoxUser.TabIndex = 1;
             // 
             // panelLoginHead
             // 
-            this.panelLoginHead.Controls.Add(this.lblLogin);
-            this.panelLoginHead.Location = new System.Drawing.Point(3, 3);
+            this.panelLoginHead.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.panelLoginHead.Controls.Add(this.labelSignin);
+            this.panelLoginHead.Font = new System.Drawing.Font("Modern No. 20", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelLoginHead.Location = new System.Drawing.Point(78, 15);
             this.panelLoginHead.Name = "panelLoginHead";
-            this.panelLoginHead.Size = new System.Drawing.Size(398, 38);
+            this.panelLoginHead.Size = new System.Drawing.Size(265, 57);
             this.panelLoginHead.TabIndex = 0;
             // 
-            // lblLogin
+            // labelSignin
             // 
-            this.lblLogin.AutoSize = true;
-            this.lblLogin.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogin.Location = new System.Drawing.Point(167, 0);
-            this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(63, 22);
-            this.lblLogin.TabIndex = 0;
-            this.lblLogin.Text = "Login";
+            this.labelSignin.AutoSize = true;
+            this.labelSignin.Font = new System.Drawing.Font("Modern No. 20", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSignin.Location = new System.Drawing.Point(51, 9);
+            this.labelSignin.Name = "labelSignin";
+            this.labelSignin.Size = new System.Drawing.Size(161, 38);
+            this.labelSignin.TabIndex = 0;
+            this.labelSignin.Text = "SIGN IN";
+            // 
+            // pictureBoxProfile
+            // 
+            this.pictureBoxProfile.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBoxProfile.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxProfile.Image")));
+            this.pictureBoxProfile.Location = new System.Drawing.Point(176, 98);
+            this.pictureBoxProfile.Name = "pictureBoxProfile";
+            this.pictureBoxProfile.Size = new System.Drawing.Size(58, 52);
+            this.pictureBoxProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxProfile.TabIndex = 16;
+            this.pictureBoxProfile.TabStop = false;
+            this.pictureBoxProfile.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // labelUsername
+            // 
+            this.labelUsername.AutoSize = true;
+            this.labelUsername.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsername.Location = new System.Drawing.Point(36, 232);
+            this.labelUsername.Name = "labelUsername";
+            this.labelUsername.Size = new System.Drawing.Size(71, 18);
+            this.labelUsername.TabIndex = 17;
+            this.labelUsername.Text = "Username";
+            // 
+            // textBoxUsername
+            // 
+            this.textBoxUsername.Location = new System.Drawing.Point(148, 230);
+            this.textBoxUsername.Name = "textBoxUsername";
+            this.textBoxUsername.Size = new System.Drawing.Size(224, 20);
+            this.textBoxUsername.TabIndex = 18;
             // 
             // FinTrust_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1462, 648);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(984, 661);
             this.Controls.Add(this.panelLogin);
             this.Controls.Add(this.lblTrust);
             this.Controls.Add(this.lblnTrust);
@@ -184,10 +230,12 @@
             this.Controls.Add(this.lblF);
             this.Name = "FinTrust_Login";
             this.Text = "FinTrust_Login";
+            this.Load += new System.EventHandler(this.FinTrust_Login_Load);
             this.panelLogin.ResumeLayout(false);
             this.panelLogin.PerformLayout();
             this.panelLoginHead.ResumeLayout(false);
             this.panelLoginHead.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfile)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,11 +249,14 @@
         private System.Windows.Forms.Label lblF;
         private System.Windows.Forms.Panel panelLogin;
         private System.Windows.Forms.Panel panelLoginHead;
-        private System.Windows.Forms.Label lblLogin;
-        private System.Windows.Forms.ComboBox cmbUser;
-        private System.Windows.Forms.Button btnSubmit;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.Label lblUser;
+        private System.Windows.Forms.Label labelSignin;
+        private System.Windows.Forms.ComboBox comboBoxUser;
+        private System.Windows.Forms.Button buttonLogin;
+        private System.Windows.Forms.TextBox textBoxPassword;
+        private System.Windows.Forms.Label labelPassword;
+        private System.Windows.Forms.Label labelUser;
+        private System.Windows.Forms.PictureBox pictureBoxProfile;
+        private System.Windows.Forms.TextBox textBoxUsername;
+        private System.Windows.Forms.Label labelUsername;
     }
 }

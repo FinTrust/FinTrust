@@ -26,5 +26,15 @@ namespace FinTrustApp.PresentationLayer
         {
 
         }
+
+        private void FinTrust_Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
