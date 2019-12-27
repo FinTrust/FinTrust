@@ -27,9 +27,22 @@ namespace FinTrustApp.PresentationLayer
 
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void FinTrust_Login_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonLogin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            FinTrust_Registration registartionform = new FinTrust_Registration();
+            registartionform.Show();
         }
     }
 }
