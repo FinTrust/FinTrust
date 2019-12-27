@@ -40,6 +40,7 @@
             this.accountHandlingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,13 +71,13 @@
             // cashierToolStripMenuItem
             // 
             this.cashierToolStripMenuItem.Name = "cashierToolStripMenuItem";
-            this.cashierToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cashierToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.cashierToolStripMenuItem.Text = "Cashier";
             // 
             // clerkToolStripMenuItem
             // 
             this.clerkToolStripMenuItem.Name = "clerkToolStripMenuItem";
-            this.clerkToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clerkToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.clerkToolStripMenuItem.Text = "Clerk";
             // 
             // viewToolStripMenuItem
@@ -98,20 +99,20 @@
             // loanApplicationToolStripMenuItem
             // 
             this.loanApplicationToolStripMenuItem.Name = "loanApplicationToolStripMenuItem";
-            this.loanApplicationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loanApplicationToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.loanApplicationToolStripMenuItem.Text = "Loan Application";
             this.loanApplicationToolStripMenuItem.Click += new System.EventHandler(this.loanApplicationToolStripMenuItem_Click);
             // 
             // greivanceRedressalToolStripMenuItem
             // 
             this.greivanceRedressalToolStripMenuItem.Name = "greivanceRedressalToolStripMenuItem";
-            this.greivanceRedressalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.greivanceRedressalToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.greivanceRedressalToolStripMenuItem.Text = "Grievance Redressal";
             // 
             // accountHandlingToolStripMenuItem
             // 
             this.accountHandlingToolStripMenuItem.Name = "accountHandlingToolStripMenuItem";
-            this.accountHandlingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.accountHandlingToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.accountHandlingToolStripMenuItem.Text = "Account Handling";
             // 
             // helpToolStripMenuItem1
@@ -128,11 +129,21 @@
             this.panel1.Size = new System.Drawing.Size(141, 47);
             this.panel1.TabIndex = 0;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(175, 231);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "label1";
+            // 
             // Probationary_Officer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 662);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Probationary_Officer";
@@ -156,5 +167,6 @@
         private System.Windows.Forms.ToolStripMenuItem accountHandlingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
     }
 }
