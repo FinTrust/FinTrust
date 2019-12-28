@@ -40,6 +40,7 @@ namespace FinTrustApp.PresentationLayer
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             this.Hide();
+            
 
             FinTrust_Registration registartionform = new FinTrust_Registration();
             registartionform.Show();

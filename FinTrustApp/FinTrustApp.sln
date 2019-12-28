@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinTrustApp", "FinTrustApp\FinTrustApp.csproj", "{5D9FF667-C4D2-454A-9B59-192C016A2928}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{7B233BA8-862B-4D99-B923-925CC13D26E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5D9FF667-C4D2-454A-9B59-192C016A2928}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D9FF667-C4D2-454A-9B59-192C016A2928}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D9FF667-C4D2-454A-9B59-192C016A2928}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B233BA8-862B-4D99-B923-925CC13D26E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B233BA8-862B-4D99-B923-925CC13D26E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B233BA8-862B-4D99-B923-925CC13D26E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B233BA8-862B-4D99-B923-925CC13D26E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
