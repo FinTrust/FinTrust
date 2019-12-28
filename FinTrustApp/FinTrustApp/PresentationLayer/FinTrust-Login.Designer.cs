@@ -34,6 +34,7 @@
             this.lbli = new System.Windows.Forms.Label();
             this.lblF = new System.Windows.Forms.Label();
             this.panelLogin = new System.Windows.Forms.Panel();
+            this.labelLoginMessage = new System.Windows.Forms.Label();
             this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.labelUsername = new System.Windows.Forms.Label();
             this.pictureBoxProfile = new System.Windows.Forms.PictureBox();
@@ -44,7 +45,7 @@
             this.comboBoxUser = new System.Windows.Forms.ComboBox();
             this.panelLoginHead = new System.Windows.Forms.Panel();
             this.labelSignin = new System.Windows.Forms.Label();
-            this.labelLoginMessage = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfile)).BeginInit();
             this.panelLoginHead.SuspendLayout();
@@ -99,6 +100,7 @@
             // panelLogin
             // 
             this.panelLogin.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelLogin.Controls.Add(this.label1);
             this.panelLogin.Controls.Add(this.labelLoginMessage);
             this.panelLogin.Controls.Add(this.textBoxUsername);
             this.panelLogin.Controls.Add(this.labelUsername);
@@ -113,6 +115,15 @@
             this.panelLogin.Name = "panelLogin";
             this.panelLogin.Size = new System.Drawing.Size(404, 412);
             this.panelLogin.TabIndex = 0;
+            // 
+            // labelLoginMessage
+            // 
+            this.labelLoginMessage.AutoSize = true;
+            this.labelLoginMessage.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLoginMessage.Location = new System.Drawing.Point(190, 162);
+            this.labelLoginMessage.Name = "labelLoginMessage";
+            this.labelLoginMessage.Size = new System.Drawing.Size(0, 14);
+            this.labelLoginMessage.TabIndex = 19;
             // 
             // textBoxUsername
             // 
@@ -224,14 +235,15 @@
             this.labelSignin.TabIndex = 0;
             this.labelSignin.Text = "SIGN IN";
             // 
-            // labelLoginMessage
+            // label1
             // 
-            this.labelLoginMessage.AutoSize = true;
-            this.labelLoginMessage.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLoginMessage.Location = new System.Drawing.Point(190, 162);
-            this.labelLoginMessage.Name = "labelLoginMessage";
-            this.labelLoginMessage.Size = new System.Drawing.Size(0, 14);
-            this.labelLoginMessage.TabIndex = 19;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(36, 115);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 18);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "User";
             // 
             // FinTrust_Login
             // 
@@ -275,5 +287,6 @@
         private System.Windows.Forms.TextBox textBoxUsername;
         private System.Windows.Forms.Label labelUsername;
         private System.Windows.Forms.Label labelLoginMessage;
+        private System.Windows.Forms.Label label1;
     }
 }
