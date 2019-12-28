@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using System.Data;
+using System.Threading.Tasks;
 using System.Data.SqlClient;
-using System.Configuration;
 
 namespace FinTrustDSL.Helper
 {
@@ -18,6 +18,7 @@ namespace FinTrustDSL.Helper
             try
             {
                 connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\1028270\\Desktop\\ancysunny\\FinTrustRepo\\FinTrustDSL\\DataBase\\FinTrustDB.mdf;Integrated Security=True";
+                con = new SqlConnection(connectionString);
 
             }
             catch (Exception ex)

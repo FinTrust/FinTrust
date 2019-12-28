@@ -123,5 +123,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\FinTrustBLL\FinTrustBLL.csproj">
+      <Project>{d57e135a-12c1-4b19-b104-a330adb004e6}</Project>
+      <Name>FinTrustBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FinTrustDTO\FinTrustDTO.csproj">
+      <Project>{ae339438-862f-4112-a9b2-a648e21b109c}</Project>
+      <Name>FinTrustDTO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
