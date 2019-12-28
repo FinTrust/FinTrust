@@ -44,6 +44,7 @@
             this.comboBoxUser = new System.Windows.Forms.ComboBox();
             this.panelLoginHead = new System.Windows.Forms.Panel();
             this.labelSignin = new System.Windows.Forms.Label();
+            this.labelLoginMessage = new System.Windows.Forms.Label();
             this.panelLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfile)).BeginInit();
             this.panelLoginHead.SuspendLayout();
@@ -98,6 +99,7 @@
             // panelLogin
             // 
             this.panelLogin.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelLogin.Controls.Add(this.labelLoginMessage);
             this.panelLogin.Controls.Add(this.textBoxUsername);
             this.panelLogin.Controls.Add(this.labelUsername);
             this.panelLogin.Controls.Add(this.pictureBoxProfile);
@@ -115,7 +117,7 @@
             // textBoxUsername
             // 
             this.textBoxUsername.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUsername.Location = new System.Drawing.Point(148, 230);
+            this.textBoxUsername.Location = new System.Drawing.Point(148, 237);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(224, 25);
             this.textBoxUsername.TabIndex = 18;
@@ -124,7 +126,7 @@
             // 
             this.labelUsername.AutoSize = true;
             this.labelUsername.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUsername.Location = new System.Drawing.Point(36, 232);
+            this.labelUsername.Location = new System.Drawing.Point(36, 240);
             this.labelUsername.Name = "labelUsername";
             this.labelUsername.Size = new System.Drawing.Size(71, 18);
             this.labelUsername.TabIndex = 17;
@@ -160,7 +162,7 @@
             // textBoxPassword
             // 
             this.textBoxPassword.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassword.Location = new System.Drawing.Point(148, 281);
+            this.textBoxPassword.Location = new System.Drawing.Point(148, 280);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = ' ';
             this.textBoxPassword.Size = new System.Drawing.Size(224, 25);
@@ -181,7 +183,7 @@
             // 
             this.labelUser.AutoSize = true;
             this.labelUser.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUser.Location = new System.Drawing.Point(36, 179);
+            this.labelUser.Location = new System.Drawing.Point(36, 197);
             this.labelUser.Name = "labelUser";
             this.labelUser.Size = new System.Drawing.Size(37, 18);
             this.labelUser.TabIndex = 2;
@@ -197,7 +199,7 @@
             "probationary Officer",
             "Cashier",
             "Clerk"});
-            this.comboBoxUser.Location = new System.Drawing.Point(148, 171);
+            this.comboBoxUser.Location = new System.Drawing.Point(148, 189);
             this.comboBoxUser.Name = "comboBoxUser";
             this.comboBoxUser.Size = new System.Drawing.Size(224, 26);
             this.comboBoxUser.TabIndex = 1;
@@ -221,6 +223,15 @@
             this.labelSignin.Size = new System.Drawing.Size(161, 38);
             this.labelSignin.TabIndex = 0;
             this.labelSignin.Text = "SIGN IN";
+            // 
+            // labelLoginMessage
+            // 
+            this.labelLoginMessage.AutoSize = true;
+            this.labelLoginMessage.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLoginMessage.Location = new System.Drawing.Point(190, 162);
+            this.labelLoginMessage.Name = "labelLoginMessage";
+            this.labelLoginMessage.Size = new System.Drawing.Size(0, 14);
+            this.labelLoginMessage.TabIndex = 19;
             // 
             // FinTrust_Login
             // 
@@ -263,5 +274,6 @@
         private System.Windows.Forms.PictureBox pictureBoxProfile;
         private System.Windows.Forms.TextBox textBoxUsername;
         private System.Windows.Forms.Label labelUsername;
+        private System.Windows.Forms.Label labelLoginMessage;
     }
 }

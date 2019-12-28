@@ -40,10 +40,12 @@ namespace FinTrustApp.PresentationLayer
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            
+            if(comboBoxUser.Text==string.Empty || textBoxUsername.Text==string.Empty ||textBoxPassword.Text==string.Empty)
+            {
+               
+            }
 
-            FinTrust_Registration registartionform = new FinTrust_Registration();
-            registartionform.Show();
+           
         }
     }
 }
